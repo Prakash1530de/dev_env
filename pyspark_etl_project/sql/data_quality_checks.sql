@@ -16,7 +16,7 @@ SELECT COUNT(*) AS sales_count, SUM(line_total) AS gross_sales
 FROM fact_sales;
 
 -- 4. Sales by day
-SELECT order_date, COUNT(*) AS order_lines, SUM(line_total) AS daily_sales
-FROM fact_sales
-GROUP BY order_date
-ORDER BY order_date;
+--SELECT order_date, COUNT(*) AS order_lines, SUM(line_total) AS daily_sales
+--FROM fact_sales
+--GROUP BY order_date
+--ORDER BY order_date;
