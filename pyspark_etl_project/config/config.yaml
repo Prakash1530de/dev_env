@@ -1,0 +1,18 @@
+project:
+  name: retail_sales_etl
+  environment: local
+
+paths:
+  sales_input: data/input/sales.csv
+  products_input: data/input/products.csv
+  curated_output: data/output/curated_sales
+  rejected_output: data/output/rejected_sales
+
+spark:
+  app_name: RetailSalesETL
+  master: local[*]
+  shuffle_partitions: 4
+
+quality:
+  require_positive_quantity: true
+  allow_zero_unit_price: true
